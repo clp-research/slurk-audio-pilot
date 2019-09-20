@@ -40,6 +40,6 @@
     "submit-message": "send-message",
     "print-history": "plain-history",
     "typing-users": "typing-users",
-    "document-ready": "http://195.128.100.217/document.ready.js"
+    "document-ready": "https://raw.githubusercontent.com/clp-research/slurk-audio-pilot/master/scripts/document.ready.js"
   }
 }

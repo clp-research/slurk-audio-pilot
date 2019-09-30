@@ -1,0 +1,803 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>openvidu package &mdash; slurk audio pilot  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="audio-bot module" href="audio-bot.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> slurk audio pilot
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">slurk-audio-pilot</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="audio-bot.html">audio-bot module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">openvidu package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-openvidu">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">slurk audio pilot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">slurk-audio-pilot</a> &raquo;</li>
+        
+      <li>openvidu package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/openvidu.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="openvidu-package">
+<h1>openvidu package<a class="headerlink" href="#openvidu-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-openvidu">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-openvidu" title="Permalink to this headline">¶</a></h2>
+<p>API binding for the OpenVidu media server.</p>
+<dl class="class">
+<dt id="openvidu.Connection">
+<em class="property">class </em><code class="sig-prename descclassname">openvidu.</code><code class="sig-name descname">Connection</code><span class="sig-paren">(</span><em class="sig-param">server</em>, <em class="sig-param">session_id</em>, <em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A connection of a client</p>
+<p>Creates a new Connection struct. Instead of directly instancing this, you should call <cite>Session.connections()</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>server</strong> (<a class="reference internal" href="#openvidu.Server" title="openvidu.Server"><em>Server</em></a>) – OpenVidu server</p></li>
+<li><p><strong>session_id</strong> (<em>str</em>) – session id of the connection</p></li>
+<li><p><strong>data</strong> (<em>dict</em>) – Dictionary of data</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="openvidu.Connection.client_data">
+<em class="property">property </em><code class="sig-name descname">client_data</code><a class="headerlink" href="#openvidu.Connection.client_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the data defined in OpenVidu Browser when calling Session.connect (metadata parameter).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.created_at">
+<em class="property">property </em><code class="sig-name descname">created_at</code><a class="headerlink" href="#openvidu.Connection.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the time when the connection was established.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.disconnect">
+<code class="sig-name descname">disconnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Connection.disconnect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forces a disconnection of a user</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#openvidu.Connection.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the identifier of the user’s connection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.location">
+<em class="property">property </em><code class="sig-name descname">location</code><a class="headerlink" href="#openvidu.Connection.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the geo location of the participant. Only available with OpenVidu Pro.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.logger">
+<em class="property">property </em><code class="sig-name descname">logger</code><a class="headerlink" href="#openvidu.Connection.logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the logger used by the Connection class.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.platform">
+<em class="property">property </em><code class="sig-name descname">platform</code><a class="headerlink" href="#openvidu.Connection.platform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the complete description of the platform used by the participant to connect to the session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.publishers">
+<em class="property">property </em><code class="sig-name descname">publishers</code><a class="headerlink" href="#openvidu.Connection.publishers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Publisher objects (streams the user is publishing). Each one is defined by the unique streamId
+property, has a createdAt property indicating the time it was created in UTC milliseconds and has a mediaOptions
+object with the current properties of the published stream (“hasVideo”, “hasAudio”, “videoActive”,
+“audioActive”, “frameRate”, “videoDimensions”, “typeOfVideo”, “filter”)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.role">
+<em class="property">property </em><code class="sig-name descname">role</code><a class="headerlink" href="#openvidu.Connection.role" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the role of the connection</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.server_data">
+<em class="property">property </em><code class="sig-name descname">server_data</code><a class="headerlink" href="#openvidu.Connection.server_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the data assigned to the user’s token when generating the token in OpenVidu Server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.subscribers">
+<em class="property">property </em><code class="sig-name descname">subscribers</code><a class="headerlink" href="#openvidu.Connection.subscribers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Subscriber objects (streams the user is subscribed to). Each on is defined by the unique streamId
+and a publisher property with the connectionId to identify the connection publishing the stream (must be present
+inside the connections.content array of the session)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Connection.token">
+<em class="property">property </em><code class="sig-name descname">token</code><a class="headerlink" href="#openvidu.Connection.token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the user’s token</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="openvidu.OpenViduException">
+<em class="property">exception </em><code class="sig-prename descclassname">openvidu.</code><code class="sig-name descname">OpenViduException</code><span class="sig-paren">(</span><em class="sig-param">status_code</em>, <em class="sig-param">error</em><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.OpenViduException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Exception raised when API call to openvidu failed.</p>
+<p>Create an exception from a status code and an error string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>status_code</strong> – Return code of the API call</p></li>
+<li><p><strong>error</strong> – Either a string, or a JSON-string with a <cite>message</cite> key</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="openvidu.Recording">
+<em class="property">class </em><code class="sig-prename descclassname">openvidu.</code><code class="sig-name descname">Recording</code><span class="sig-paren">(</span><em class="sig-param">server</em>, <em class="sig-param">id</em>, <em class="sig-param">_data=None</em><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Recording" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Struct representing a recording.</p>
+<dl class="method">
+<dt id="openvidu.Recording.created_at">
+<em class="property">property </em><code class="sig-name descname">created_at</code><a class="headerlink" href="#openvidu.Recording.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the time when the recording started.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.custom_layout">
+<em class="property">property </em><code class="sig-name descname">custom_layout</code><a class="headerlink" href="#openvidu.Recording.custom_layout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the custom layout that is being used. Only defined if <cite>recording_layout</cite> is set to <cite>CUSTOM</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.duration">
+<em class="property">property </em><code class="sig-name descname">duration</code><a class="headerlink" href="#openvidu.Recording.duration" title="Permalink to this definition">¶</a></dt>
+<dd><p>duration of the video file in seconds. <cite>None</cite> until stop operation is called.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.has_audio">
+<em class="property">property </em><code class="sig-name descname">has_audio</code><a class="headerlink" href="#openvidu.Recording.has_audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the recording has an audio track, False otherwise.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.has_video">
+<em class="property">property </em><code class="sig-name descname">has_video</code><a class="headerlink" href="#openvidu.Recording.has_video" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the recording has a video track, False otherwise.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#openvidu.Recording.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the recording identifier. Store it to perform other operations such as stop, get or delete the recording.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.logger">
+<em class="property">property </em><code class="sig-name descname">logger</code><a class="headerlink" href="#openvidu.Recording.logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the logger used by the Connection class.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#openvidu.Recording.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the name of the recording. If no name parameter was passed before, it will be equal to the id field.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.output_mode">
+<em class="property">property </em><code class="sig-name descname">output_mode</code><a class="headerlink" href="#openvidu.Recording.output_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the output mode of the recording.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.recording_layout">
+<em class="property">property </em><code class="sig-name descname">recording_layout</code><a class="headerlink" href="#openvidu.Recording.recording_layout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the recording layout that is being used. Only defined if <cite>output_mode</cite> is set to <cite>COMPOSED</cite> and <cite>has_video</cite>
+to <cite>True</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.resolution">
+<em class="property">property </em><code class="sig-name descname">resolution</code><a class="headerlink" href="#openvidu.Recording.resolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the resolution of the video file. Only defined if <cite>output_mode</cite> is set to <cite>COMPOSED</cite> and <cite>has_video</cite> to
+<cite>True</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.session_id">
+<em class="property">property </em><code class="sig-name descname">session_id</code><a class="headerlink" href="#openvidu.Recording.session_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the session associated to the recording (same value as session in the body request).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.size">
+<em class="property">property </em><code class="sig-name descname">size</code><a class="headerlink" href="#openvidu.Recording.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the size in bytes of the video file. <cite>None</cite> until stop operation is called.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.status">
+<em class="property">property </em><code class="sig-name descname">status</code><a class="headerlink" href="#openvidu.Recording.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the status of the recording.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.stop_recording">
+<code class="sig-name descname">stop_recording</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Recording.stop_recording" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stops recording.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Recording.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the data fields of this recording.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Recording.url">
+<em class="property">property </em><code class="sig-name descname">url</code><a class="headerlink" href="#openvidu.Recording.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the URL for download the recording. None, if <cite>openvidu.recording.public-access</cite> is set to <cite>False</cite></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="openvidu.Server">
+<em class="property">class </em><code class="sig-prename descclassname">openvidu.</code><code class="sig-name descname">Server</code><span class="sig-paren">(</span><em class="sig-param">url</em>, <em class="sig-param">secret</em>, <em class="sig-param">verify=True</em><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Server" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Main class for communicating with the openvidu backend.</p>
+<p>Creates and verifies a new Server from an url, and a secret.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>secret</strong> (<em>str</em>) – The secret used to authenticate with the openvidu server</p></li>
+<li><p><strong>url</strong> (<em>str</em>) – The URL where openvidu listens to api calls</p></li>
+<li><p><strong>verify</strong> (<em>bool</em>) – Verify certificates</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="openvidu.Server.cdr">
+<em class="property">property </em><code class="sig-name descname">cdr</code><a class="headerlink" href="#openvidu.Server.cdr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get whether Call Detail Record is enabled or not.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.get_sessions">
+<em class="property">property </em><code class="sig-name descname">get_sessions</code><a class="headerlink" href="#openvidu.Server.get_sessions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of all active sessions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.initialize_session">
+<code class="sig-name descname">initialize_session</code><span class="sig-paren">(</span><em class="sig-param">custom_session_id: str = None</em>, <em class="sig-param">media_mode='ROUTED'</em>, <em class="sig-param">recording_mode='MANUAL'</em>, <em class="sig-param">default_output_mode='COMPOSED'</em>, <em class="sig-param">default_recording_layout='BEST_FIT'</em>, <em class="sig-param">default_custom_layout=''</em><span class="sig-paren">)</span> &#x2192; openvidu.Session<a class="headerlink" href="#openvidu.Server.initialize_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes a new session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>media_mode</strong> (<em>str</em>) – ‘ROUTED’: Media streams will be routed through OpenVidu Server. This Media Mode is mandatory for session
+recording.
+Not available yet: ‘RELAYED’</p></li>
+<li><p><strong>custom_session_id</strong> (<em>str</em>) – You can fix the sessionId that will be assigned to the session with this
+parameter. If you make another request with the exact same customSessionId while previous session already
+exists, the old session is returned. If this parameter is an empty string or None, OpenVidu Server will
+generate a random sessionId for you.</p></li>
+<li><p><strong>recording_mode</strong> (<em>str</em>) – ‘ALWAYS’: Automatic recording from the first user publishing until the last participant leaves the session.
+‘MANUAL’: If you want to manage when start and stop the recording.</p></li>
+<li><p><strong>default_output_mode</strong> (<em>str</em>) – ‘COMPOSED’: when recording the session, all streams will be composed in the same file in a grid layout.
+‘INDIVIDUAL’: when recording the session, every stream is recorded in its own file.</p></li>
+<li><p><strong>default_recording_layout</strong> (<em>str</em>) – Only applies if defaultOutputMode is set to ‘COMPOSED’:
+‘BEST_FIT’: A grid layout where all the videos are evenly distributed.
+‘CUSTOM’: Use your own custom layout. See Custom recording layouts section to learn how.
+Not available yet: ‘PICTURE_IN_PICTURE’, ‘VERTICAL_PRESENTATION’, ‘HORIZONTAL_PRESENTATION’</p></li>
+<li><p><strong>default_custom_layout</strong> (<em>str</em>) – Only applies if defaultRecordingLayout is set to ‘CUSTOM’:
+A relative path indicating the custom recording layout to be used if more than one is available. If the
+string is empty, a custom layout expected under path set with openvidu-server configuration property
+openvidu.recording.custom-layout)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the session</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.logger">
+<em class="property">property </em><code class="sig-name descname">logger</code><a class="headerlink" href="#openvidu.Server.logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the logger used by the Server class.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.max_recv_bandwidth">
+<em class="property">property </em><code class="sig-name descname">max_recv_bandwidth</code><a class="headerlink" href="#openvidu.Server.max_recv_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the maximum video bandwidth sent from clients to OpenVidu Server, in kbps. 0 means unconstrained.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.max_send_bandwidth">
+<em class="property">property </em><code class="sig-name descname">max_send_bandwidth</code><a class="headerlink" href="#openvidu.Server.max_send_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the maximum video bandwidth sent from OpenVidu Server to clients, in kbps. 0 means unconstrained.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.min_recv_bandwidth">
+<em class="property">property </em><code class="sig-name descname">min_recv_bandwidth</code><a class="headerlink" href="#openvidu.Server.min_recv_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the minimum video bandwidth sent from clients to OpenVidu Server, in kbps. 0 means unconstrained.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.min_send_bandwidth">
+<em class="property">property </em><code class="sig-name descname">min_send_bandwidth</code><a class="headerlink" href="#openvidu.Server.min_send_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the minimum video bandwidth sent from OpenVidu Server to clients, in kbps. 0 means unconstrained.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.public_url">
+<em class="property">property </em><code class="sig-name descname">public_url</code><a class="headerlink" href="#openvidu.Server.public_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the URL to connect clients to OpenVidu Server. This can be the full IP (protocol, host and port) or just
+a domain name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.recording">
+<em class="property">property </em><code class="sig-name descname">recording</code><a class="headerlink" href="#openvidu.Server.recording" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get whether recording module is enabled or not.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.request_headers">
+<em class="property">property </em><code class="sig-name descname">request_headers</code><a class="headerlink" href="#openvidu.Server.request_headers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the headers used in API calls.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.version">
+<em class="property">property </em><code class="sig-name descname">version</code><a class="headerlink" href="#openvidu.Server.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the version of the openvidu server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Server.webhook">
+<em class="property">property </em><code class="sig-name descname">webhook</code><a class="headerlink" href="#openvidu.Server.webhook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get whether the webhook service is enabled or not.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="openvidu.Session">
+<em class="property">class </em><code class="sig-prename descclassname">openvidu.</code><code class="sig-name descname">Session</code><span class="sig-paren">(</span><em class="sig-param">server</em>, <em class="sig-param">id</em>, <em class="sig-param">_data=None</em><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents a session in OpenVidu.</p>
+<p>Creates a session from the specified server and id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>server</strong> (<a class="reference internal" href="#openvidu.Server" title="openvidu.Server"><em>Server</em></a>) – OpenVidu server</p></li>
+<li><p><strong>id</strong> (<em>str</em>) – id of the session</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="openvidu.Session.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Session.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.connections">
+<em class="property">property </em><code class="sig-name descname">connections</code><a class="headerlink" href="#openvidu.Session.connections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a collection of active connections in the session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.created_at">
+<em class="property">property </em><code class="sig-name descname">created_at</code><a class="headerlink" href="#openvidu.Session.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the time when the session was created</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.custom_session_id">
+<em class="property">property </em><code class="sig-name descname">custom_session_id</code><a class="headerlink" href="#openvidu.Session.custom_session_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the custom session identifier. Only defined if the session was initialized passing a <cite>custom_session_id</cite>
+field</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.default_custom_layout">
+<em class="property">property </em><code class="sig-name descname">default_custom_layout</code><a class="headerlink" href="#openvidu.Session.default_custom_layout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the default custom layout configured for the recordings of the session. Its format is a relative path. Only
+defined if field <cite>default_recording_layout</cite> is set to <cite>CUSTOM</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.default_output_mode">
+<em class="property">property </em><code class="sig-name descname">default_output_mode</code><a class="headerlink" href="#openvidu.Session.default_output_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the default output mode for the recordings of the session (<cite>COMPOSED</cite> or <cite>INDIVIDUAL</cite>)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.default_recording_layout">
+<em class="property">property </em><code class="sig-name descname">default_recording_layout</code><a class="headerlink" href="#openvidu.Session.default_recording_layout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the default recording layout configured for the recordings of the session. Only defined if field
+<cite>default_output_mode</cite> is set to <cite>COMPOSED</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.generate_token">
+<code class="sig-name descname">generate_token</code><span class="sig-paren">(</span><em class="sig-param">role: str = None</em>, <em class="sig-param">data: str = None</em>, <em class="sig-param">video_min_send_bandwidth: int = None</em>, <em class="sig-param">video_max_send_bandwidth: int = None</em>, <em class="sig-param">video_min_recv_bandwidth: int = None</em>, <em class="sig-param">video_max_recv_bandwidth: int = None</em>, <em class="sig-param">allowed_filters=None</em><span class="sig-paren">)</span> &#x2192; openvidu.Token<a class="headerlink" href="#openvidu.Session.generate_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a new token.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>role</strong> (<em>str</em>) – Role granted to the token user</p></li>
+<li><p><strong>data</strong> (<em>str</em>) – metadata associated to this token (usually participant’s information)</p></li>
+<li><p><strong>video_min_send_bandwidth</strong> – minimum number of Kbps that the client owning the token will try to send to
+Kurento Media Server. 0 means unconstrained. Giving a value to this property will override the global
+configuration set in OpenVidu Server configuration (parameter openvidu.streams.video.min-send-bandwidth)
+for every outgoing stream of the user owning the token.</p></li>
+<li><p><strong>video_max_send_bandwidth</strong> – maximum number of Kbps that the client owning the token will be able to send to
+Kurento Media Server. 0 means unconstrained. Giving a value to this property will override the global
+configuration set in OpenVidu Server configuration (parameter openvidu.streams.video.max-send-bandwidth)
+for every outgoing stream of the user owning the token. WARNING: this value limits every other bandwidth
+of the WebRTC pipeline this client-to-server stream belongs to. This includes every other user subscribed
+to the stream.</p></li>
+<li><p><strong>video_min_recv_bandwidth</strong> – minimum number of Kbps that the client owning the token will try to receive
+from Kurento Media Server. 0 means unconstrained. Giving a value to this property will override the global
+configuration set in OpenVidu Server configuration (parameter openvidu.streams.video.min-recv-bandwidth) for
+every incoming stream of the user owning the token.</p></li>
+<li><p><strong>video_max_recv_bandwidth</strong> – maximum number of Kbps that the client owning the token will be able to receive
+from Kurento Media Server. 0 means unconstrained. Giving a value to this property will override the global
+configuration set in OpenVidu Server configuration (parameter openvidu.streams.video.max-recv-bandwidth) for
+every incoming stream of the user owning the token. WARNING: the lower value set to this property limits
+every other bandwidth of the WebRTC pipeline this server-to-client stream belongs to. This includes the user
+publishing the stream and every other user subscribed to the same stream.</p></li>
+<li><p><strong>allowed_filters</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List of strings containing the names of the filters the user owning the token
+will be able to apply (see Voice and video filters)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The generated token</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#openvidu.Session.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the identifier of the session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.logger">
+<em class="property">property </em><code class="sig-name descname">logger</code><a class="headerlink" href="#openvidu.Session.logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the logger used by the Session class.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.media_mode">
+<em class="property">property </em><code class="sig-name descname">media_mode</code><a class="headerlink" href="#openvidu.Session.media_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the media mode configured for the session (<cite>ROUTED</cite> or <cite>RELAYED</cite>)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.recording">
+<em class="property">property </em><code class="sig-name descname">recording</code><a class="headerlink" href="#openvidu.Session.recording" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get whether the session is being recorded or not at this moment.</p>
+<p>Note, that this value is not updated until <cite>session.update</cite> is called.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.recording_mode">
+<em class="property">property </em><code class="sig-name descname">recording_mode</code><a class="headerlink" href="#openvidu.Session.recording_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the recording mode configured for the session (<cite>ALWAYS</cite> or <cite>MANUAL</cite>)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.start_recording">
+<code class="sig-name descname">start_recording</code><span class="sig-paren">(</span><em class="sig-param">name: str = None</em>, <em class="sig-param">output_mode='COMPOSED'</em>, <em class="sig-param">has_audio=True</em>, <em class="sig-param">has_video=True</em>, <em class="sig-param">recording_layout='BEST_FIT'</em>, <em class="sig-param">custom_layout: str = None</em>, <em class="sig-param">resolution: str = None</em><span class="sig-paren">)</span> &#x2192; openvidu.Recording<a class="headerlink" href="#openvidu.Session.start_recording" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts a new recording</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – the name you want to give to the video file. You can access this same property in openvidu-browser
+on recordingEvents. If no name is provided, the video file will be named after id property of the recording</p></li>
+<li><p><strong>output_mode</strong> (<em>str</em>) – record all streams in a single file in a grid layout or record each stream in its own
+separate file. This property will override the defaultOutputMode property set on POST /api/sessions for this
+particular recording. ‘COMPOSED’: when recording the session, all streams will be composed in the same file
+in a grid layout. ‘INDIVIDUAL’: when recording the session, every stream is recorded in its own file.</p></li>
+<li><p><strong>has_audio</strong> (<em>bool</em>) – Whether to record audio or not.</p></li>
+<li><p><strong>has_video</strong> (<em>bool</em>) – Whether to record video or not</p></li>
+<li><p><strong>recording_layout</strong> (<em>str</em>) – Only applies if output_mode is set to ‘COMPOSED’ and has_video to True: the layout to
+be used in this recording. This property will override the default_recording_layout property for this
+particular recording. ‘BEST_FIT’ : A grid layout where all the videos are evenly distributed. ‘CUSTOM’: Use
+your own custom layout. Not available yet: ‘PICTURE_IN_PICTURE’, ‘VERTICAL_PRESENTATION’,
+‘HORIZONTAL_PRESENTATION’</p></li>
+<li><p><strong>custom_layout</strong> (<em>str</em>) – Only applies if recordingLayout is set to ‘CUSTOM’: A relative path indicating the custom
+recording layout to be used if more than one is available. Default to empty string (if so custom layout
+expected under path set with openvidu-server system property openvidu.recording.custom-layout) . This
+property will override the default_custom_layout property for this particular recording.</p></li>
+<li><p><strong>resolution</strong> (<em>str</em>) – Only applies if output_mode is set to ‘COMPOSED’ and has_video to True: The resolution of
+the recorded video file. It is a string indicating the width and height in pixels like this:
+“1920x1080”. Values for both width and height must be between 100 and 1999.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The recording</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.unpublish">
+<code class="sig-name descname">unpublish</code><span class="sig-paren">(</span><em class="sig-param">stream</em><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Session.unpublish" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forces unpublishing of a stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>stream</strong> (<em>str</em>) – Stream id to unpublish.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Session.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Session.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the data fields of the session.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="openvidu.Token">
+<em class="property">class </em><code class="sig-prename descclassname">openvidu.</code><code class="sig-name descname">Token</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#openvidu.Token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents an OpenVidu token.</p>
+<p>Creates a new Token struct. Instead of directly instancing this, you should call <cite>Session.generate_token()</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>dict</em>) – Dictionary of data</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="openvidu.Token.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#openvidu.Token.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the metadata associated to this token.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Token.id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#openvidu.Token.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the token value. Send it to one client to pass it as a parameter in openvidu-browser method
+<cite>Session.connect</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Token.role">
+<em class="property">property </em><code class="sig-name descname">role</code><a class="headerlink" href="#openvidu.Token.role" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the role associated to this token.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Token.session_id">
+<em class="property">property </em><code class="sig-name descname">session_id</code><a class="headerlink" href="#openvidu.Token.session_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the session id for which the token was associated.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Token.video_max_recv_bandwith">
+<em class="property">property </em><code class="sig-name descname">video_max_recv_bandwith</code><a class="headerlink" href="#openvidu.Token.video_max_recv_bandwith" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the maximum number of Kbps that the client owning the token will try to receive from Kurento Media Server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Token.video_max_send_bandwith">
+<em class="property">property </em><code class="sig-name descname">video_max_send_bandwith</code><a class="headerlink" href="#openvidu.Token.video_max_send_bandwith" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the maximum number of Kbps that the client owning the token will try to send to Kurento Media Server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Token.video_min_recv_bandwith">
+<em class="property">property </em><code class="sig-name descname">video_min_recv_bandwith</code><a class="headerlink" href="#openvidu.Token.video_min_recv_bandwith" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the minimum number of Kbps that the client owning the token will try to receive from Kurento Media Server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="openvidu.Token.video_min_send_bandwith">
+<em class="property">property </em><code class="sig-name descname">video_min_send_bandwith</code><a class="headerlink" href="#openvidu.Token.video_min_send_bandwith" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the minimum number of Kbps that the client owning the token will try to send to Kurento Media Server.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="audio-bot.html" class="btn btn-neutral float-left" title="audio-bot module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Tim Diekmann
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

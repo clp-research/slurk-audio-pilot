@@ -3,6 +3,20 @@ dist: xenial
 jobs:
   include:
   - stage: deploy
+    name: Docker
+    language: ruby
+    services:
+      - docker
+    script:
+      - docker build -t slurk/audio-pilot .
+    before_deploy:
+      - echo "$REPOSITORY_PASS" | docker login -u "$REPOSITORY_USER" --password-stdin
+    deploy:
+      - provider: script
+        script: docker push slurk/audio-pilot
+        on:
+          branch: master
+  - stage: deploy
     name: Documentation
     language: python
     python: 3.7

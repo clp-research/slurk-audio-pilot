@@ -1,12 +1,12 @@
-## slurk audio pilot
+# slurk audio pilot
 
 [![Build Status](https://travis-ci.com/clp-research/slurk-audio-pilot.svg?branch=master)](https://travis-ci.com/clp-research/slurk-audio-pilot)
 
 Pilot experiment on audio recording based on [slurk](https://github.com/clp-research/slurk).
 
-### Instructions
+## Instructions
 
-#### Use on MacOS
+### Use on MacOS
 
 Following steps setup and run an OpenVidu Server and Slurk Audio Bot (+Slurk Server):
 

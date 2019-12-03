@@ -619,13 +619,13 @@ class Session:
                                      "session": self.id,
                                      "role": role,
                                      "data": data,
-                                     "kurentoOptions": json.dumps({
-                                         "videoMinSendBandwidth": video_min_send_bandwidth,
-                                         "videoMaxSendBandwidth": video_max_send_bandwidth,
-                                         "videoMinRecvBandwidth": video_min_recv_bandwidth,
-                                         "videoMaxRecvBandwidth": video_max_recv_bandwidth,
-                                         "allowedFilters": allowed_filters,
-                                     }),
+                                    #  "kurentoOptions": json.dumps({
+                                    #      "videoMinSendBandwidth": video_min_send_bandwidth,
+                                    #      "videoMaxSendBandwidth": video_max_send_bandwidth,
+                                    #      "videoMinRecvBandwidth": video_min_recv_bandwidth,
+                                    #      "videoMaxRecvBandwidth": video_max_recv_bandwidth,
+                                    #      "allowedFilters": allowed_filters,
+                                    #  }),
                                  })
                                  )
 

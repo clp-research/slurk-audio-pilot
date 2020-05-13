@@ -1,3 +1,5 @@
+# __DEPRECATED__: Please refer to the [Slurk bots](https://github.com/clp-research/slurk-bots) repository as this one is no longer maintained.
+
 # slurk audio pilot
 
 [![Build Status](https://travis-ci.com/clp-research/slurk-audio-pilot.svg?branch=master)](https://travis-ci.com/clp-research/slurk-audio-pilot)
